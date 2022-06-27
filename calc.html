@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calc.css">
+    <link rel="icon" href="./favicon.ico">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <div class="conteiner">
+
+
+
+        <section class="grid grid-template-areas">
+            <input disabled id="visor" class="display">
+
+            <button onclick="apagar()" class="item limpar botao-operacao">C</button>
+            <button onclick="invert()" class="item mais-menos botao-operacao">+/-</button>
+            <button onclick="porcentagem()" class="item porcentagem botao-operacao">%</button>
+            <button onclick="inserirvalores('/')" class="item divisao botao-operacao">/</button>
+
+            <button onclick="inserirvalores('7')" class="item sete botao-numero">7</button>
+            <button onclick="inserirvalores('8')" class="item oito botao-numero">8</button>
+            <button onclick="inserirvalores('9')" class="item nove botao-numero">9</button>
+            <button onclick="inserirvalores('*')" class="item multiplicacao botao-operacao-direita">*</button>
+
+            <button onclick="inserirvalores('4')" class="item quatro botao-numero">4</button>
+            <button onclick="inserirvalores('5')" class="item cinco botao-numero">5</button>
+            <button onclick="inserirvalores('6')" class="item seis botao-numero">6</button>
+            <button onclick="inserirvalores('-')" class="item menos botao-operacao-direita">-</button>
+
+            <button onclick="inserirvalores('1')" class="item um botao-numero">1</button>
+            <button onclick="inserirvalores('2')" class="item dois botao-numero">2</button>
+            <button onclick="inserirvalores('3')" class="item tres botao-numero">3</button>
+            <button onclick="inserirvalores('+')" class="item mais botao-operacao-direita">+</button>
+
+            <button onclick="inserirvalores('0')" class="item zero botao-numero">0</button>
+            <button onclick="inserirvalores('.')" class="item ponto botao-numero">.</button>
+            <button onclick="calcule()" class="item igual botao-operacao-direita">=</button>
+
+
+        </section>
+    </div>
+
+</body>
+
+<script src="calc.js"></script>
+
+</html>
